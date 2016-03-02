@@ -1,0 +1,1 @@
+I have done a gant chart showing all the activities and time allocation for each activity. 
