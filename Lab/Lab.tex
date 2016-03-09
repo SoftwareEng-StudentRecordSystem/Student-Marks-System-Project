@@ -5,6 +5,7 @@
 % All KJN's macros and goodies (some shameless borrowing from SPL)
 \usepackage{KJN}
 
+
 %\usepackage[hyphens]{url}
 
 %
@@ -56,6 +57,8 @@ Londiwe$\;$Ngema$\;$(448871)
 \pagestyle{plain}.
 \pagenumbering{roman} 
 \tableofcontents 
+
+
 
 \newpage
 
@@ -194,6 +197,122 @@ Interacting: the client tries logging in:
 \item If the user is a student then the student will only have certain privileges such as reading from the database only.
 \item If the user is an administrator or a staff member then they may be allowed to have different privileges to edit the database: such as alter student results and add new student onto the database.
 \end{itemize}
+
+\section{Specific Requirements}
+
+\subsection{UML Activity Diagram}
+
+Figure 2 Shows the UML activity diagram of the how the software should work. As shown in the UML activity diagram, the user will first be ask to enter a user-name and a password. This is done to keep track of the type of user who will be interacting with the software i.e student, staff and admin. Each type of user will be given different rights to interact with the server as shown in the UML diagram. Students are only allowed to view the results, staff is allowed to change marks or add results and the administrator will be responsible of adding or removing users.   
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim={0cm 0 0 0},clip]{UML-Activity}
+\caption{UML Activity Diagram}
+\end{figure}
+\end{center}
+
+\subsection{Use Case Reports}
+Since we have only three users of the software, namely student, staff and administrator, three use case reports have been made for each user. 
+ 
+
+\clearpage
+\subsubsection{Student Use-Case Report}$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$
+
+A use case report for a student is shown in Figure 3.
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim={0cm 0cm 0cm 0cm },clip,scale = 1.1]{StudentUsecase}
+\caption{Use Case Diagram For Student}
+\end{figure}
+\end{center}
+
+
+
+\begin{center}
+    \begin{tabular}{ | p{2cm} | p{10cm}| }
+    \hline
+    \textbf{Use case}& \textbf{Description} \\ \hline
+    login & The student need to sign in in order to view the results \\ \hline
+    Key in Year & The student must be able to specify the year which they need the results for  \\ \hline
+    Display results & The student must be able to view the results displayed on the screen \\ \hline
+    Logout          & The student must be able to logout  \\ \hline
+
+    \end{tabular}
+\end{center}
+
+
+
+
+
+\clearpage
+\subsubsection{Staff Use-Case Report}$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$
+
+A use case report for staff is shown in Figure 4.
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim={0cm 0cm 0cm 0cm },clip,scale = 1.1]{StaffUsecase}
+\caption{Use Case Diagram For Staff}
+\end{figure}
+\end{center}
+
+
+
+\begin{center}
+    \begin{tabular}{ | p{2cm} | p{10cm}| }
+    \hline
+    \textbf{Use case}& \textbf{Description} \\ \hline
+    login & Staff need to sign in order to modify results \\ \hline
+    Change Results & Staff must be able to modify or add results  \\ \hline
+    Logout          & Staff member must be able to logout  \\ \hline
+
+    \end{tabular}
+\end{center}
+
+
+
+
+\clearpage
+\subsubsection{Administrator Use-Case Report}$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$
+
+A use case report for an Administrator is shown in Figure 5.
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim={0cm 0cm 0cm 0cm },clip,scale = 1.1]{AdminUsecase}
+\caption{Use Case Diagram For Administrator}
+\end{figure}
+\end{center}
+
+
+
+\begin{center}
+    \begin{tabular}{ | p{2cm} | p{10cm}| }
+    \hline
+    \textbf{Use case}& \textbf{Description} \\ \hline
+    login & Administrator need to sign in \\ \hline
+    Add users & The administrator must be able to add or remove users  \\ \hline
+    Logout          & Administrator must be able to logout  \\ \hline
+
+    \end{tabular}
+\end{center}
+
+
+\section{Sequence Diagram}
+
+The sequence diagram in Figure 6 shows how each user interact with the interface and how the interface interact with database.  
+
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim={0cm 0cm 0cm 0cm },clip,scale = 1.1]{SequenceDig}
+\caption{Sequence Diagram}
+\end{figure}
+\end{center}
+
 
 \vfill
 
