@@ -4,7 +4,8 @@
 \contentsline {subsection}{\numberline {1.3}List of Definitions and abbreviations}{1}{subsection.1.3}
 \contentsline {subsubsection}{\numberline {1.3.1}Definitions}{1}{subsubsection.1.3.1}
 \contentsline {subsubsection}{\numberline {1.3.2}Abbreviations}{1}{subsubsection.1.3.2}
-\contentsline {section}{\numberline {2.}Expanded Description of the project}{1}{section.2}
+\contentsline {subsection}{\numberline {1.4}Tools used}{1}{subsection.1.4}
+\contentsline {section}{\numberline {2.}Expanded Description of the project}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Front-End}{2}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}\textbf {System Input and Output:}}{2}{subsubsection.2.1.1}
-\contentsline {subsection}{\numberline {2.2}Back-End}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Back-End}{3}{subsection.2.2}
