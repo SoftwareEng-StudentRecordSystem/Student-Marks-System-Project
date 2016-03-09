@@ -3,6 +3,18 @@
 \providecommand{\url}[1]{{\tt #1}}
 \providecommand{\urlprefix}{URL }
 
+\bibitem{ref5}
+Apache.
+\newblock \enquote{{Apache - HTTP Server Project}.}
+\newblock \url{https://httpd.apache.org}, 2016.
+\newblock [Online; accessed 9-March-2016].
+
+\bibitem{ref6}
+WhatIs.com.
+\newblock \enquote{{Web server}.}
+\newblock \url{http://whatis.techtarget.com/definition/Web-server}, 2016.
+\newblock [Online; accessed 9-March-2016].
+
 \bibitem{ref3}
 G.~Palaniswamy.
 \newblock \enquote{{Two-Tier and Three-Tier Architecture with example}.}
