@@ -92,7 +92,7 @@ Londiwe$\;$Ngema$\;$(448871)
 %
 \pagestyle{plain}.
 \pagenumbering{arabic} 
-\section{Introduction}
+\section{Introduction (Sanele Gcaba)}
 
 \subsection{Methodology}
 
@@ -170,17 +170,17 @@ The software system will follow a Two-Tier Architecture due to its ease of use a
 
 
 A Two-Tier Architecture is a software architecture where the interface runs on client and the data layer is stored on a server\cite{ref4}.
-\subsection{Front-End}
+\subsection{Front-End (Londiwe Ngema and Masana Khosa)}
 
 Khosa Masana (559990) and Londiwe Ngema (448871) are going to be responsible for the design, development and documentation of the front end (user interface).
 
 Both the user interface of the browser and the smart-phone app are going to be designed using HTML5, CSS and JavaScript. The user interface will offer a platform whereby the users are going to interact with the server. The users (i.e students and staff) will be prompted for a student/staff number and a password to view or change the results. Only the staff members (lecturers) will be given the right to change the results, students can only view the results. Validation of credentials will be done in Javascript before they are submitted to the server.  
 
-\subsubsection{\textbf{System Input and Output:}} 
+\subsubsection{System Input and Output:} 
  
 With the student number, password and year entered as an input, the relevant information (results) of that particular student and the particular year will be searched from the server and displayed to the student. Results (Output) will be displayed in a form of a table with course name, course code, results and a symbol as columns. PHP will be used to link the back-end and front-end
 
-\subsection{Back-End}
+\subsection{Back-End (Sanele Gcaba and Tshegofatso Misapitso)}
 Sanele Gcaba (459380) and Tshegofatso Misapitso (600313)  are going to be responsible for the design, development and documentation of the back-end (Server and Database).
 
 The back-end:
@@ -203,7 +203,27 @@ Interacting: the client tries logging in:
 \item If the user is an administrator or a staff member then they may be allowed to have different privileges to edit the database: such as alter student results and add new student onto the database.
 \end{itemize}
 
-\subsubsection{Database Design - T.Misapitso (600313)}:
+\subsection{Constraints (Londiwe Ngema)}
+\begin{itemize}
+\item The User Interface language is English only.
+\item Students cannot view test marks, only the final marks.
+\end{itemize}
+
+\newpage
+
+\subsection{ER Diagram (Londiwe Ngema)}
+The ER Diagram shows how data is organized within the database.
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{ER_DIAGRAM}
+\caption{ER Diagram}
+\end{figure}
+\end{center}
+
+
+\subsubsection{Database Design - T.Misapitso }:
 The design of the database schematic diagram is illustrated in the figure below. It shows the contents database and how they are linked to one another.
 
 \begin{center}
@@ -228,7 +248,7 @@ Figure 2 Shows the UML activity diagram of the how the software should work. As 
 \end{figure}
 \end{center}
 
-\subsection{Use Case Reports}
+\subsection{Use Case Reports (Masana Khosa)}
 Since we have only three users of the software, namely student, staff and administrator, three use case reports have been made for each user. 
  
 
@@ -257,11 +277,6 @@ A use case report for a student is shown in Figure 3.
 
     \end{tabular}
 \end{center}
-
-
-
-
-
 \clearpage
 \subsubsection{Staff Use-Case Report}$\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;$
 
