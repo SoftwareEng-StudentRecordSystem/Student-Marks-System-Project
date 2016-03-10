@@ -1,0 +1,61 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{ref7}
+R.~H. Technology.
+\newblock \enquote{{6 Basic SDLC Methodologies: Which One is Best?}}
+\newblock
+  \url{https://www.roberthalf.com/technology/blog/6-basic-sdlc-methodologies-the-pros-and-cons},
+  2014.
+\newblock [Online; accessed 10-March-2016].
+
+\bibitem{ref8}
+VERSIONONE.
+\newblock \enquote{{Understanding Scrum Project Management}.}
+\newblock \url{https://www.versionone.com/scrum-project-management/}, 2016.
+\newblock [Online; accessed 10-March-2016].
+
+\bibitem{ref5}
+Apache.
+\newblock \enquote{{Apache - HTTP Server Project}.}
+\newblock \url{https://httpd.apache.org}, 2016.
+\newblock [Online; accessed 9-March-2016].
+
+\bibitem{ref6}
+WhatIs.com.
+\newblock \enquote{{Web server}.}
+\newblock \url{http://whatis.techtarget.com/definition/Web-server}, 2016.
+\newblock [Online; accessed 9-March-2016].
+
+\bibitem{ref3}
+G.~Palaniswamy.
+\newblock \enquote{{Two-Tier and Three-Tier Architecture with example}.}
+\newblock
+  \url{http://www.c-sharpcorner.com/UploadFile/gowth/two-tier-and-three-tier-architecture-with-example/},
+  2010.
+\newblock [Online; accessed 2-March-2016].
+
+\bibitem{ref4}
+techopedia.
+\newblock \enquote{{Two-Tier Architecture}.}
+\newblock
+  \url{https://www.techopedia.com/definition/467/two-tier-architecture}, 2016.
+\newblock [Online; accessed 2-March-2016].
+
+\bibitem{ref1}
+PCWorld.
+\newblock \enquote{{Five Reasons Linux Beats Windows for Servers}.}
+\newblock
+  \url{http://www.pcworld.com/article/204423/why_linux_beats_windows_for_servers.html},
+  2015.
+\newblock [Online; accessed 24-February-2016].
+
+\bibitem{ref2}
+MySQL.
+\newblock \enquote{{Why MySQL?}}
+\newblock \url{https://www.mysql.com/why-mysql/}, 2015.
+\newblock [Online; accessed 24-February-2016].
+
+\end{thebibliography}
