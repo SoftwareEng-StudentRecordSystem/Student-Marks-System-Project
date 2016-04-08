@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1.}Introduction (Sanele Gcaba)}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Methodology}{1}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Purpose}{1}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Project Scope}{1}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}List of Definitions and abbreviations}{2}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Definitions}{2}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Abbreviations}{2}{subsubsection.1.4.2}
+\contentsline {subsection}{\numberline {1.5}Tools used}{2}{subsection.1.5}
+\contentsline {section}{\numberline {2.}Expanded Description of the project}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Front-End (Londiwe Ngema and Masana Khosa)}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Back-End (Sanele Gcaba and Tshegofatso Misapitso)}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Constraints (Londiwe Ngema)}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}ER Diagram (Londiwe Ngema)}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Database Design - (T.Misapitso 600313) }{5}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Hardware Specifications (T. Misapitso 600313)}{6}{subsection.2.6}
+\contentsline {section}{\numberline {3.}Specific Requirements}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}UML Activity Diagram}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Use Case Reports (Masana Khosa)}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Student Use-Case Report}{8}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Staff Use-Case Report}{9}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Administrator Use-Case Report}{10}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4.}Sequence Diagram}{10}{section.4}

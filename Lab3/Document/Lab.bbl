@@ -1,0 +1,21 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{{\tt #1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{ref3}
+G.~Palaniswamy.
+\newblock \enquote{{Two-Tier and Three-Tier Architecture with example}.}
+\newblock
+  \url{http://www.c-sharpcorner.com/UploadFile/gowth/two-tier-and-three-tier-architecture-with-example/},
+  2010.
+\newblock [Online; accessed 2-March-2016].
+
+\bibitem{ref4}
+techopedia.
+\newblock \enquote{{Two-Tier Architecture}.}
+\newblock
+  \url{https://www.techopedia.com/definition/467/two-tier-architecture}, 2016.
+\newblock [Online; accessed 2-March-2016].
+
+\end{thebibliography}

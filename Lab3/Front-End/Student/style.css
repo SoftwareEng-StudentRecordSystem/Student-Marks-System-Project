@@ -1,0 +1,32 @@
+﻿
+body {
+    background-color: white;
+} 
+
+/* sizes */
+
+#main-wrap > div { min-height: 450px; }
+
+/* layout */
+#main-wrap {
+    /* overflow to handle inner floating block */
+    overflow: hidden;
+}
+
+#sidebar {
+    float: left;
+    width: 30%;
+}
+
+#content-wrap {
+    float: right;
+    width: 65%;
+    border: 1px solid black;
+} 
+
+.logoutLblPos{
+
+   position:absolute;
+   top:0;
+   right:0;
+}

@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1.}Project Scope}{ii}{section.1}
+\contentsline {section}{\numberline {2.}List of Definitions and abbreviations}{ii}{section.2}
+\contentsline {subsubsection}{\numberline {2.0.1}Definitions}{ii}{subsubsection.2.0.1}
+\contentsline {subsection}{\numberline {2.1}Abbreviations}{ii}{subsection.2.1}
+\contentsline {section}{\numberline {3.}Expanded Description of the project}{iii}{section.3}
+\contentsline {section}{\numberline {4.}Responsibilities}{iii}{section.4}
+\contentsline {section}{\numberline {5.}The current prototype}{iii}{section.5}
+\contentsline {subsection}{\numberline {5.1}Front-End}{iii}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Back-End}{iii}{subsection.5.2}
