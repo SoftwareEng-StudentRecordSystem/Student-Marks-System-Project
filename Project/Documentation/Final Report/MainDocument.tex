@@ -1,0 +1,516 @@
+\documentclass[10pt,onecolumn]{MainDocument}
+
+% All KJN's macros and goodies (some shameless borrowing from SPL)
+\usepackage{KJN}
+
+
+%\usepackage[hyphens]{url}
+
+% PDF Info
+
+\ifpdf
+\pdfinfo{
+	/Title (SOFTWARE ENGINEERING PROJECT: STUDENTS MARKS/RECORDS MANAGEMENT WEBSITE DESIGN)
+	/Author (Khosa Masana (559990), Sanele Gcaba(459380), Tshegofatso Misapitso (600313), Londiwe Ngema (448871) )
+	/ModDate (D:200510121530)
+	/Subject (ELEN417/455 Paper Format, 2005)
+	/Keywords (ELEN417, ELEN455, paper, instructions, style guidelines, laboratory project)
+}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+	\begin{titlepage}
+		
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+		
+		\center % Center everything on the page
+		{\small School$\;$of$\;$Electrical$\;$and$\;$Information$\;$Engineering,$\;$University of$\;$the$\;$Witwatersrand,$\;$Private$\;$Bag$\;$3,$\;$2050,$\;$Johannesburg,$\;$South$\;$Africa}\\[1.5cm] % Name of your university/college
+		
+		\textsc{ELEN 4009 - Software Engineering}\\[0.5cm] % Major heading such as course name
+		
+		\HRule \\[0.4cm]
+		{ \large \bfseries Student Marks/Records Management Software}\\[0.4cm] % Title of your document
+		\HRule \\[1.5cm]
+		
+		\large
+		
+		\textbf{Front end pair :}
+		Khosa$\;$Masana$\;$(559990)\ and
+		Londiwe$\;$Ngema$\;$(448871)
+		
+		\textbf{Back end pair :}
+		Tshegofatso Misapitso$\;$(600313)\ and
+		Sanele$\;$Gcaba$\;$(459380)
+		
+		
+		{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
+		
+		%\includegraphics{Logo}\\[1cm] % Include a department/university logo - this will require the graphicx package
+		
+		\begin{figure}[h]
+        \begin{center}
+        \includegraphics[scale=0.70]{Wits-logo1}
+        \end{center}
+        \end{figure}
+		
+		\vfill % Fill the rest of the page with whitespace
+		
+	\end{titlepage}
+	
+	
+
+	\pagestyle{plain}.
+	\pagenumbering{roman} 
+	\tableofcontents 
+	
+	\newpage
+	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+\section*{Document Status Sheet}
+	
+	\begin{center}
+		\begin{tabular}{ | p{5cm} | p{7cm} |}
+			\hline
+			\textbf{Document Title}& Software Requirements\\ \hline
+			\textbf{Authors} & M.$\;$Khosa, S.$\;$Gcaba, T.$\;$Misapitso, L.$\;$Ngema \\ \hline
+			\textbf{Version} & 0.01 \\ \hline
+			\textbf{Document Status} & Draft  \\ \hline
+			
+		\end{tabular}
+	\end{center}
+	
+	
+	\begin{center}
+		\begin{tabular}{ | p{2cm} | p{3cm} | p{5cm} | p{5cm} |}
+			\hline
+			\textbf{Version}& \textbf{Date}& \textbf{Author(s)} & \textbf{Summary} \\ \hline
+			0.0.1 & 25-02-2016 & M.$\;$Khosa, S.$\;$Gcaba, T.$\;$Misapitso, L.$\;$Ngema& Document Creation. \\ \hline
+			
+		\end{tabular}
+	\end{center}
+	
+	\newpage
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%
+	\pagestyle{plain}.
+	\pagenumbering{arabic} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\section{INTRODUCTION}
+
+\subsection{Problem Statement}
+
+University of the Witwatersrand school of electrical engineering and Information Engineering aims on implementing a software to manage  provisional students marks as they complete assignments, tests, laboratory work, etc., throughout the year. The software to be implemented will have three distinct users which are the course coordinator, the school administrator and the student. Each user has different levels of access to the database. The course coordinator of each course, offered  by the school, must be able to enter marks obtained by students for all forms of assessment like tests, assignments, labs, exams and many more depending on the structure of a particular course. Students must be able to retrieve and view their assessment marks obtained so far, for all forms of assessment on each course. This allows students to track  their progress throughout the year as they continuously check their marks on the system. The school administrator must be able to retrieve relevant summaries of marks for each course in a spread-sheet format which will be analysed by the course coordinator and the head of school and then be sent to the official mark system of the faculty. All the marks stored, for each course, in an academic year must be kept in the database for 10 years. The users must be able to interact with the database through a web browser and a smart mobile application. 
+ 
+\subsection{Project Objectives}
+
+The objective of this project is to design, implement and develop a student marks software that is user-friendly and cost effective. The software has only three types of users which are the course coordinator, school administrator and a student. The users must interact with the database through a web browser. The software must be able to allow the course coordinator, of each course offered by the school, to input marks obtained by the students for all forms of assessments. The students must be able to access the software and retrieve their marks throughout the year. The school administrator must be able to retrieve relevant summaries of marks for each course in a spreadsheet format. The project will be divided into two parts namely the back-end and front-end. The front-end of the software is going to be developed using HTML, CSS, JavaScript and PHP. The back-end is developed using PHP and mySQL. The two parts are thereafter combined into one student record/mark system. There is no budget allocated to this project since it can be designed, implemented and developed using readily available resources such as computers. The server used is an open source Apache server. The time allocated to complete this project is 2 months and 3 days, From 9th of February to the 11th of April. 
+
+\subsection{Stakeholders}
+
+Figure 1 shows the stakeholders for the project. 
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.70]{stakeholders}
+\caption{Project Stakeholders}
+\end{center}
+\end{figure}
+
+\subsection{Deliverables}
+
+\textbf{At the end of this project the application website is expected to atleast enable users to:-}
+\begin{itemize}
+\item Register themselves.
+\item Identify which group among the three mentioned above the user belongs to.
+\item If the user is a student, the most important thing is for them to track their progress by having all their marks on the system.
+\item It is important for the Admin to retrieve a table of student names and their results.
+\item Another important task for the Course Co-ordinator is for him/her to add various forms of assessment and also input the student marks.
+\end{itemize} 
+
+
+\clearpage
+\newpage
+\section{Requirements Gathering}
+
+\subsection{Methodology}
+
+The System Development Life Cycle (SDLC) methodology to be used for the project follows the Agile Model, this model breaks down the product into a cycle, it quickly delivers a working product and is a more realistic methodology. Ongoing releases are produced with small incremental changes and it depends heavily on customer interaction \cite{ref7}. Specifically the Scrum Agile Model will be adopted for the project, Scrum comprises of short sprints and it enables the software team to be able to prioritize on what matters most. The Scrum Model is basically about delivering more often and responding to feedback regularly offered\cite{ref8}.           
+
+\subsection{Purpose}
+
+The purpose of this document is thus to present a detailed description of the requirements, design and implementation of the student marks/record system (SMMS). It will state the purpose and features of the system, the interfaces of the system, what the system will do, the limitations under which it must operate, define inputs and the expected reaction of the system (that is the outputs of the system) and present the designed and implemented web application back-end and front-end subsystems. 
+
+Student Marks/Records Management Software provides on-line services that enable students to view their marks as they complete  assignments, tests and laboratory work, the software system allows staff such as course coordinators the right to add/edit marks obtained by the student under different forms of assessment. It is a convenient way for students to have access to their marks in a safe and confidential way as opposed to accessing them on notice boards where everyone else can publicly see them. The system ensures that each student can track his/her tentative progress throughout the year,it also helps in establishing errors in the record as early as possibly. 
+
+\subsection{Project Scope}
+\begin{itemize}
+
+\item There are three basic users of the system - Students, Course coordinators and School administrator.
+\item The primary function of the application is to allow students and staff  to log-in using their details (Student/Staff number and password) and be able to access and view student records, the records include student marks for all forms of assessments for all courses registered for. 
+\item The system database stores user profiles and student marks records. Marks records are retained for a period of 10 yrs.
+\item The software program should have domains assigned, i.e. each user can be able to access relevant information and they are allowed to view/edit/add based on what their recognised domain.
+\item  The system would be accessed online via a Browser.
+
+\end{itemize}
+
+Below is a list of privileges per user as specified on the project brief \cite{ref9}.
+
+\textbf{The Course Coordinator should be able to:-}
+\begin{itemize}
+\item Register himself/herself.
+\item Add various assessment method for the course and weighting for each assessment.
+\item Enter student marks on a user-friendly interface.
+\item Display or print out the table of students and their marks.
+\item Generate a summary statistics of the performance of the students - maximum, minimum, average, standard deviation or variants of each assessment.  
+\item View projected pass rate based on the assessment marks accumulated students in class.
+\end{itemize}
+
+\textbf{The School Administrator should be able to:-}
+\begin{itemize}
+\item Register himself/herself.
+\item Display or print out table of students and their marks.
+\item Generate a summary statistics of the performance of the students. 
+\item Generate a comparative chart of the assessment marks of selected courses being taken by students of a particular group. 
+\item Histogram of assessment marks of all courses taken by a specific student.   
+\item Any recorded offences (e.g. plagiarism) for a student.
+\item The performances in the same course across different years may be compared.
+\end{itemize}
+
+\textbf{The Student should be able to:-}
+\begin{itemize}
+\item Register himself/herself.
+\item Display assessment marks for a course and statistics for that assessment.
+\item Display assessment marks for all the courses  
+\item Based on current assessment marks, give what performance goals are needed to pass the course.
+\end{itemize}
+
+\subsection{List of Definitions and abbreviations}
+
+\subsubsection{Definitions}
+\begin{center}
+    \begin{tabular}{ | p{3cm} | p{9cm} |}
+\hline
+\textbf{Term}& \textbf{Definition}\\ \hline
+ Database & A collection of records stored within the system \\ \hline
+ Table & A collection of related data consisting of columns and rows \\ \hline   
+ Client & A requesting program or a user\\ \hline 
+     \end{tabular}
+\end{center}
+
+\subsubsection{Abbreviations}~\\
+
+\textbf{SMMS} - Student Marks/record management system
+
+\textbf{HTTP} - Hypertext Transfer Protocol
+
+\textbf{HTML} - HyperText Markup Language
+
+\textbf{RDBMS} - Relational Database Management System
+
+\textbf{SQL} - Structured Query Language
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\subsection{Tools used}
+\textbf{Web server} - Apache2
+
+The Apache web server is the worlds most used web server software program, it uses HTTP to serve files that form web pages to users in response to their requests. It is an open source program \cite{ref5, ref6}. 
+
+\textbf{Development tools (Front-End)} - HTML, CSS and Javascript
+
+\textbf{Development tools (Back-End)} - PHP  
+
+PHP is a server scripting language, it is widely used, free, and efficient tool.
+
+\textbf{Database Platform} - MySQL and PHPmyadmin 
+
+MySQL is an open-source RDBMS, it stores data in tables and PHPmyadmin is a graphical tool intended to handle administration of MySQL over the web, while phpMyadmin provides a user interface for the mySQL RDBMS.  
+
+\subsection{Expanded Description of the project}
+
+The software system will follow a Two-Tier Architecture due to its ease of use and maintainability as compared to a Three-Tier Architecture. However, the performance of a Two-Tier Architecture slows down with an increase in users \cite{ref3}, hence a Three-Tier Architecture will be implemented with an increase of the number of users. Figure 1 below shows the Two-Tier Architecture for the student marks/record system.   
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{Two-Tier}
+\caption{Two-Tier Software Architecture}
+\end{figure}
+\end{center}
+
+A Two-Tier Architecture is a software architecture where the interface runs on a client and the data layer is stored on a server\cite{ref4}.
+
+
+
+\subsection{Constraints }
+\begin{itemize}
+\item The User Interface language is English only.
+\item The program currently runs on a localhost.
+\end{itemize}
+
+\subsection{ER Diagrams }
+The ER Diagrams below show how data is organized within the database.
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{ER1}
+\caption{ER Diagram for Course co-ordinator and student}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{ER2}
+\caption{ER Diagram for the administrator and student}
+\end{figure}
+\end{center}
+
+\newpage
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{ER3}
+\caption{ER Diagram for student}
+\end{figure}
+\end{center}
+
+\subsection{Hardware Specifications }
+\textbf{Minimum Requirements}
+\begin{center}
+	\textbf{Client side}\\
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline
+		\textbf{Windows} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\ \hline
+		Internet Explorer	&	Intel Pentium III	
+		or AMD - 800 MHz	&	128 MB	&	100 MB		\\ \hline
+		Google Chrome		&	Intel Pentium IV - 
+		SSE2 capable		&	128 MB	&	100 MB		\\ \hline
+	\end{tabular}
+	
+	
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline
+		\textbf{Mac} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\			\hline
+		Google Chrome		&	64 bit Intel  
+		processor	       &   128 MB  &	100 MB	\\ \hline
+	\end{tabular}
+	
+	
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline			\textbf{Linux} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\
+		\hline
+		Google Chrome		&	Intel Pentium III  
+		processor	       &   128 MB  &	100 MB	\\ \hline
+	\end{tabular}
+	
+	\textbf{Server side}\\
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline	
+		\textbf{Linux} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\
+		\hline
+		Apache 2		&	2 GHz processor or faster  
+		processor	       &   1 GB (32 bit) or 2 GB (64 bit)  &		\\ \hline
+	\end{tabular}
+\end{center}
+
+\textbf{Recommended Requirements}
+\begin{center}
+	\textbf{Client side}\\
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline
+		\textbf{Windows} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\ \hline
+		Internet Explorer	&	1 GHz or faster	&	1 GB (32 bit) or 2 GB (64 bit)	&	256 MB		\\ \hline
+	\end{tabular}
+	
+	
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline
+		\textbf{Mac} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\				\hline
+		Google Chrome	&	64 bit Intel processor	 &  1 GB  &	256 MB	\\ \hline
+	\end{tabular}
+	
+	
+	\begin{tabular}{ | p{5cm} | p{4cm} | p{3cm} | p{3cm} |}
+		\hline
+		\textbf{Linux} & \textbf{Processor} & \textbf{RAM} & \textbf{Disk Space}\\
+		\hline
+		Google Chrome		1 GHz or faster	&	1 GB (32 bit) or 2 GB (64 bit)	&	256 MB	\\ \hline
+	\end{tabular}
+	
+	
+	\textbf{Server side}
+	Server specifications will depend on the development of the project.
+\end{center}
+
+
+\input{Front-End} % Front-End Documentation by Masana Khosa And Londiwe Ngem
+
+\newpage
+
+\input{Back-End}  % Back-End Documentation by Sanele Gcaba And Tshegofatso Misapitso
+
+
+\section{Scrum Agile Method}
+
+Scrum is a very quick and easy process which is widely used for managing and controlling software development projects in a rapidly changing environment. The aim of following the scrum methodology during a software development life cycle is to improve communication, maximise productivity, maximise cooperation amongst the team members and also controlling the chaos of conflicting interests. Scrum is a team based process and requires the co-operation of every member of the team \cite{SoftwareEngineering}. 
+
+
+Each member of scrum needs to be a part in one of the three scrum roles namely the product owner, team member and a scrum master \cite{SoftwareEngineering}. 
+
+\begin{itemize}
+\item \textbf{Product Owner} \\
+The product owner represents the stakeholders, customers and users. The product owner gives the goals of the project and the scrum team prioritises these as priorities of the project. The prioritized features will be selected and recorded in a product backlog. The Owner of the products needs to make sure that the project progresses and the project requirements are met. The project owner acts as a middle man between stakeholders and developers, he/she is also responsible of making plans and also announcing the release dates \cite{SoftwareEngineering}.    
+
+\item \textbf{Team Members}
+The team members are the developers of the software. The team must be organised and cross functional. The work to be done will be divided amongst the team members and also encourages the team to improve \cite{SoftwareEngineering}. 
+
+    
+\item \textbf{Scrum Master}
+
+The scrum master solves all the problems and challenges that may be encountered during the course of the project \cite{SoftwareEngineering}. 
+    
+\end{itemize}  
+
+In this project the Product owner is the lecturer, Etutu Otoo. He was responsible for issuing the projects requirements. The progress of the project was monitored by the product owner as submissions were made during the course of the project to monitor the success of the project.   
+
+The Team members are the developers mentioned in the stakeholder diagram in section 1. In this project, the scrum master for the project was unanimously chosen to be the scrum master.  
+
+\subsection{Sprint Planning } 
+
+\subsubsection{Gantt chart}
+   
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 10cm 14cm 0},clip, scale=0.58]{gantt1}
+\caption{Gantt chart part 1}
+\end{figure}
+\end{center}
+
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 6cm 14cm 2cm},clip, scale=0.58]{gantt2}
+\caption{Gantt chart part 2}
+\end{figure}
+\end{center}
+
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 11cm 14cm 0},clip, scale=0.58]{gantt3}
+\caption{Gantt chart part 3}
+\end{figure}
+\end{center}
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm  14cm 0cm},clip, scale=0.58]{gantt4}
+\caption{Gantt chart part 4}
+\end{figure}
+\end{center}
+
+\newpage
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 2cm 14cm 0cm},clip, scale=0.58]{gantt5}
+\caption{Gantt chart part 5}
+\end{figure}
+\end{center}
+
+\newpage
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 11cm 14cm 0},clip, scale=0.58]{gantt6}
+\caption{Gantt chart part 6}
+\end{figure}
+\end{center}
+
+\newpage
+
+\subsubsection{Sprint Retrospective}
+
+Sprint retrospective serves to reflect on the current progress of the project to identify areas that need improvement and to reinforce good habits.
+
+\textbf{Overall Sprint Retrospection}
+
+	\begin{tabular}{ | p{5cm} | p{4cm} | }
+		\hline
+		\textbf{Well done} & \textbf{future improvement}\\ \hline
+		Co-ordination 	& Scrum meetings were effective but took longer than planned quite often\\ \hline	
+		Effective communication& Under-estimation of tasks \\ \hline
+		Punctuality & Uneven work distribution			
+		\\ \hline
+	\end{tabular}
+	
+	\newpage
+
+The figure below shows that the estimated time was not followed precisely as highlighted in the improvement section above.	
+	
+	
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm  28cm 0cm},clip, scale=0.7]{burndown1}
+\caption{Burn down chart data}
+\end{figure}
+\end{center}
+
+\newpage
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 8.5cm 25cm 4.5cm},clip, scale=1]{burndown}
+\caption{Burn down chart}
+\end{figure}
+\end{center}
+
+\newpage
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=1]{product_backlog}
+\caption{Product backlog}
+\end{figure}
+\end{center}
+
+
+\section{Conclusion}
+
+The student record/marks system is presented in this document. With the aim of developing and implementing the system, project requirements are established and the design of the system is separated into the front-end and back-end subsystems. The scrum agile method is chosen as the (SDLC) methodology to quickly deliver a working prototype. As shown in the product backlog not all features were successfully implemented due to time constrains and their complexity.   
+
+\newpage
+%\nocite{*}
+\bibliographystyle{witseie}
+\bibliography{sample}
+
+%{\tiny \vfill \hfill \today \hspace{5mm} witseie-paper-2003.\TeX}
+
+\end{document}
+
+" vim: ts=4
+" vim: tw=78
+" vim: autoindent
+" vim: shiftwidth=4
+file:///C:/Users/masana khosa/Desktop/SoftWareEngReport/Stakeholders.PNG

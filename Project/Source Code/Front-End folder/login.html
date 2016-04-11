@@ -18,17 +18,18 @@
 
 
 
-    <div id="homePage"> <!-- Start homePage div -->
+    <div id="homePage">
 
 
        <img src="The_Wits.jpg" alt="SofwareEng" class = "image" height="669" width="990"  >
  
 
-         <div id = "logoDiv"> <!-- Start logoDiv div -->
+         <div id = "logoDiv">
              <img src="WITS-logo-full-colour-600x300.jpg" alt="SofwareEng" class = "logo" height="300" width="600" > 
-        </div> <!-- End logoDiv div -->
+        </div>
 
-      <!--Start form for login -->
+                  
+
            <form action="login.php"  class = "getMarks" method = "post" >
             <label>UserID  :</label><input type = "text" name = "studentNumber" class = "box"/><br /><br />
              <label>Password :</label><input type = "password" name = "passWord" class = "box" /><br/><br />
@@ -36,21 +37,31 @@
  
                    <option value="Student">Student</option>
                    <option value="CC">CC</option>
-                   <option value="Admin/HOS">Admin/HOS</option>
+                   <option value="Admin">Admin</option>
                    
             </select>
 
            <input type="submit" value="Submit" >
-          </form>  <!--End form for login -->
+          </form>
 
+
+
+   
 
       <div id = "welcome">
          <a class="slidetitle"  >Welcome to the student marks portal </a>
       </div>             
          
     </div>
+
+
+
+          
     
 </html>
+
+
+
 <script>
 
 $(document).ready(function()
@@ -77,5 +88,6 @@ $(document).ready(function()
     });
     
 }); 
+
 
 </script>

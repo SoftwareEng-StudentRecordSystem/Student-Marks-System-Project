@@ -20,33 +20,18 @@
 		
       if($count == 1) 
       {
+	  $_SESSION['login_user'] = $myusername;
 
-          if($_POST['domain'] == "Student")
-         {
-   
-   //         session_register("myusername");
-            $_SESSION['login_user'] = $myusername;
+          if($_POST['domain'] == "Student"){
 	   header("location: Student/log_html.php");
-
-         
-          }
-          else if ($_POST['domain'] == "CC")
-          {
-            header("location: COURSE_CO_ORD/log.html");
-            session_register("myusername");
-            $_SESSION['login_user'] = $myusername;
-
           }
 
-          else if ($_POST['domain'] == "Admin/HOS")
-          {
-            header("location: Admin/log.html");
-            session_register("myusername");
-            $_SESSION['login_user'] = $myusername;
-
-          }
-
-
+          else if ($_POST['domain'] == "CC"){
+     	    header("location: COURSE_CO_ORD/log_html.php");
+           }
+          else if ($_POST['domain'] == "Admin"){
+	    header("location: Admin/log_html.php");
+	   }
 
       }
 

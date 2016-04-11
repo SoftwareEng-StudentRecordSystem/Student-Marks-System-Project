@@ -12,18 +12,34 @@
 
       <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 
+
+      <script type="text/javascript">
+         <!--
+
+            function Redirect() {
+
+               window.location="login.php";
+
+            }
+
+         //-->
+
+       </script>
    </head>
+
 
    <body>
 
    <h1><img src="witslogo.png" alt="witslogo" />ACADEMIC RECORD PORTAL</h1>
    <h3>Welcome: <?php echo "$row[name] $row[surname]" ?> </h3>
 
-<div id="main-wrap"> <!-- Start main-wrap div -->
+<div id="main-wrap">
 
-    <div id="sidebar"> <!-- Start sidebar div -->
+    <div id="sidebar">
 
-<ul id="drop-nav"> <!-- Start drop-nav id -->
+
+
+<ul id="drop-nav">
 
 <aside>
 
@@ -35,17 +51,17 @@
 
         <li><span><a href="#">Statistics</a></span></li>
 
-        <li><span><a href="#"> Assessment Marks for all courses. </a></span></li>
+        <li><span><a href="marks_helper.php"> Assessment Marks for all courses. </a></span></li>
 
         
 
         <li class="last"><span><a href="#"> Perfomance goals </a></span></li>
 
-      </ul>  <!-- End drop-nav id -->
+      </ul>
 
-</div> <!-- End sidebar div -->
+</div>
 
-    <div id="content-wrap"> More Information <!-- Start content-wrap id -->
+    <div id="content-wrap"> More Information
 
       
 
@@ -57,9 +73,15 @@
 
         <li class="last"><span>Perfomance goals - Based on current perfomance what ought to be done to pass</a></span></li>
 
-</div> <!-- End content-wrap id -->
+</div>
 
-  <h3><a href = "../logout.php">Sign Out</a></h3>
+  <form align="right" name="form1" method="post" action="../logout.php">
+  <label class="logoutLblPos">
+  <input name="submit2" type="submit" id="submit2" value="log out">
+  </label>
+</form>
+
+
 
 </body>
 
