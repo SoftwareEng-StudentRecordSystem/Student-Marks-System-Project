@@ -1,0 +1,46 @@
+ <?php
+   include("config_2.php");
+   include("config.php");
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // student number and course code sent from form 
+
+      $mynumber = mysqli_real_escape_string($db,$_POST['number']);
+      $mycode = mysqli_real_escape_string($db,$_POST['code']);
+      $myname = mysqli_real_escape_string($db,$_POST['name']); 
+      $mysname = mysqli_real_escape_string($db,$_POST['sname']);
+      
+      do{
+       for($i = 0; $i < count($table); $i++) {
+           $value = $table[$i];
+	   $count = strcmp($value,$mycode);
+	}}while($count!=0);
+
+     if($count=0){
+      $sql = "INSERT INTO registrar VALUES('$mynumber', '$mycode') ";
+      if(mysqli_query($link, $sql)){
+	echo "Student registered to registrar.";}
+   
+      $sql = "INSERT INTO $mycode (studentID) VALUES('$mynumber')";
+       if(mysqli_query($link, $sql)){ 
+	echo "Student registered to $mycode.";}
+
+      $sql = "INSERT INTO students VALUES('$mynumber','$myname','$mysname')";
+      if(mysqli_query($link, $sql)){ 
+	echo "Student added to students list.";}
+	
+      $sql = "INSERT INTO users VALUES('$mynumber','0000')";
+       if(mysqli_query($db, $sql)) {
+	echo "Student added to users list.";}
+	
+        echo "Student registration complete.";
+
+     if(!mysqli_query($db, $sql)){
+	die("Connection failed: " . mysqli_connect_error());
+	}
+   };
+}
+
+//mysqli_close($link);
+//mysqli_close($db);
+?>
