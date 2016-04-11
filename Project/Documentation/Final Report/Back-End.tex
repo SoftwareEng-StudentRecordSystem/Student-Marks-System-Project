@@ -3,7 +3,7 @@
 
 
 \section{Part B : Back-End}  
-The Back-End constitute of three parts, these include the server,the database, and the application(Generally referred to as the business model), hence the  student marks/record system is designed following a two tier architecture as described in the requirements gathering section. The developed Back-End follows a LAMP web development architectural design. That is, \textbf{L}inux is used as the operating system for the server to run on, \textbf{A}pache is deployed as the application server, \textbf{M}ySQL is used as the Relational SQL Database Management System (RDBMS) and \textbf{P}HP is used as a scripting server Language for realising the designed business model or application requirements as per user specification.     
+The Back-End constitutes of three parts, namely the server,the database, and the application(Generally referred to as the business model), hence the  student marks/record system is designed following a two tier architecture as described in the requirements gathering section. The developed Back-End follows a LAMP web development architectural design. That is, \textbf{L}inux is used as the operating system for the server to run on, \textbf{A}pache is deployed as the application server, \textbf{M}ySQL is used as the Relational SQL Database Management System (RDBMS) and \textbf{P}HP is used as a scripting server Language for analysing the designed business model or application requirements as per user specification.     
 
 \subsection{The Server}
 The Apache server is used to serve the web-pages that are designed and implemented by the front-end development team, this server is hosted within a Personal Computer (PC) and accessible using a local host of the machine. For the presented web application system, the Apache server is run on a Linux operating system. The Linux operating system is specifically chosen for the server to run on because of its Stability, Security and low Cost of operation \cite{ref1}. As a result a PC running Linux Ubuntu operating system was chosen to host the server. The used Apache server is chosen because it is easy to install and operate, it also provides a secure, efficient HTTP services. Moreover, Apache is a thoroughly tested server partly because of its wide use, serving over a half of all the websites in the World Wide Web (WWW). The Server is open source and it provides free HTTP services.  
@@ -101,19 +101,63 @@ This table contains all course information that include course components and th
 \end{itemize}
 
 \subsection{The application(Business model)}
-PHP is  selected as a server scripting language. This language is chosen because of its simplicity, it is also a well documented programming language that is widely supported for web application development.
+PHP is  selected as a server scripting language. This language is chosen because of its simplicity, it is also a well documented programming language that is widely supported for web application development. Some of the required user interface specifications were not met due to time constraints and hence they will not be discussed in this report
 
-Interacting: the client tries logging in:
+
+\subsubsection{Logging in}
+A php script file "login.php" is used to interact with the database. The login process is described below.
 
 \begin{itemize}
-\item Client enters credentials, these credentials get validated ‘onsubmit’.
-
-
-\item If the credentials are correct: a PHP script is used to determine if the user is a  student or staff member.
-\item If the user is a student then the student will only have certain privileges such as reading from the database only.
-\item If the user is an administrator or a staff member then they may be allowed to have different privileges to edit the database: such as alter student results and add new students onto the database.
+\item Upon submission of the form from the user interface(UI), the credentials are posted to the login.php page and stored as variables.
+\item A mysqli query is sent to the database requesting for the information in the table "users" of database "login" to be stored in an array. The array is a three-element array containing the user's id number, password and domain.
+\item A while-loop is ran, using the query as the condition, to identify a match between the database array and the credentials saved from the form.
+\item If-statements are used to condition redirecting of the client based on the match of the information and the domain that the user is meant to use.
 \end{itemize}
 
-  
+Upon completion of logging in, a session is initiated and the user's id number is stored in the array for later usage.
+
+The activity UML diagram of the logging-in process is demonstrated in the figure below.
+
+\begin{center}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=8cm]{Login_activity}
+		\caption{Activity UML diagram of the logging-in process}
+	\end{figure}
+\end{center} 
+
+\subsubsection{Student}
+From the given specifications, the student user-interface requirements include the displaying of all the course marks for every course the student registered for. This implemented the following way
+
+\begin{itemize}
+	\item Upon decision to check the marks, the user is redirected to a php script "marks\_helper.php". The user's student number is recalled from the session array and assigned to a variable.
+	
+	\item A mysqli query is ran as a condition to a while-loop. The query is meant to compare the student number from the session to the one obtained from the database table "registrar". Once matches are found, the "course\_code" that corresponds to the student number "registrar" table are, and the student number itself, are used to locate the marks in the relevant ELEN table.
+	
+	\item A while-loop is ran, using the query as the condition, is used to print out the relevant results to the user interface.
+\end{itemize}
+
+\subsubsection{School Administrator}
+The accomplished implementation to the school administrator interface is the registration of a student to the database. For simplicity, it is assumed that the student is already registered to the login "users" table. This was implemented in the following manner:
+
+\begin{itemize}
+	\item Upon the choice to add a student after logging in, the administrator is prompted to input the name, surname, student number and course code of the student to be registered.
+	\item The resulting form is posted to a php script "student\_register.php" and saved as variables for interaction with the database. Using a query, it is tested if the student number of the student can be matched to any other one in the database.  
+	\item If the student number and course code posted to the page are tested for "registrar" table and not found, a query is made to add the values of the course code and student number to the "registrar" table.
+	\item The student number is also, via a query, added to the relevant course that has been posted (should it exist).
+\end{itemize}
+
+subsubsection{Course co-ordinator}
+From the given specifications, the course co-ordinator user-interface requirements include the displaying of all the students in a particular course and their respective marks. This is done in the following manner:
+
+\begin{itemize}
+	\item Once the course co-ordinator has selected to view the students and their marks, he will be prompted to input a course code for the course with which he is concerned.
+	\item A form will be submitted to the page "marks.php" and the posted course code will be stored as a variable.
+	\item A query is constructed as a while-loop argument to search for the table of the posted course code in the database "Student\_Records".
+	\item If a match is found, the data of that particular table is saved in an array (one row at a time) and displayed to the user interface via the page "view\_marks.php"
+\end{itemize}
+
+
+
 
 

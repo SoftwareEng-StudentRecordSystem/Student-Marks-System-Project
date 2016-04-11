@@ -76,10 +76,10 @@
 	\begin{center}
 		\begin{tabular}{ | p{5cm} | p{7cm} |}
 			\hline
-			\textbf{Document Title}& Software Requirements\\ \hline
+			\textbf{Document Title}& Software Requirements, Front and Back end development documentation \\ \hline
 			\textbf{Authors} & M.$\;$Khosa, S.$\;$Gcaba, T.$\;$Misapitso, L.$\;$Ngema \\ \hline
-			\textbf{Version} & 0.01 \\ \hline
-			\textbf{Document Status} & Draft  \\ \hline
+			\textbf{Version} & 1 \\ \hline
+			\textbf{Document Status} & Final  \\ \hline
 			
 		\end{tabular}
 	\end{center}
@@ -90,7 +90,7 @@
 			\hline
 			\textbf{Version}& \textbf{Date}& \textbf{Author(s)} & \textbf{Summary} \\ \hline
 			0.0.1 & 25-02-2016 & M.$\;$Khosa, S.$\;$Gcaba, T.$\;$Misapitso, L.$\;$Ngema& Document Creation. \\ \hline
-			
+		    1 & 11-04-2016 & M.$\;$Khosa, S.$\;$Gcaba, T.$\;$Misapitso, L.$\;$Ngema& Final Documentation with edited requirements as per project owner's request. \\ \hline
 		\end{tabular}
 	\end{center}
 	
@@ -238,7 +238,7 @@ MySQL is an open-source RDBMS, it stores data in tables and PHPmyadmin is a grap
 
 \subsection{Expanded Description of the project}
 
-The software system will follow a Two-Tier Architecture due to its ease of use and maintainability as compared to a Three-Tier Architecture. However, the performance of a Two-Tier Architecture slows down with an increase in users \cite{ref3}, hence a Three-Tier Architecture will be implemented with an increase of the number of users. Figure 1 below shows the Two-Tier Architecture for the student marks/record system.   
+The software system will follow a Two-Tier Architecture due to its ease of use and maintainability as compared to a Three-Tier Architecture. However, the performance of a Two-Tier Architecture slows down with an increase in users \cite{ref3}, hence a Three-Tier Architecture will be implemented with an increase of the number of users. Figure 2 below shows the Two-Tier Architecture for the student marks/record system.   
 \begin{center}
 \begin{figure}[h]
 \centering
@@ -390,7 +390,9 @@ The Team members are the developers mentioned in the stakeholder diagram in sect
 \subsection{Sprint Planning } 
 
 \subsubsection{Gantt chart}
-   
+
+The figures below show gantt charts for the project execution planning. 
+  
 \begin{center}
 \begin{figure}[h]
 \centering
@@ -417,37 +419,18 @@ The Team members are the developers mentioned in the stakeholder diagram in sect
 \end{figure}
 \end{center}
 
-\begin{center}
-\begin{figure}[h]
-\centering
-\includegraphics[trim = {0 0cm  14cm 0cm},clip, scale=0.58]{gantt4}
-\caption{Gantt chart part 4}
-\end{figure}
-\end{center}
-
-\newpage
+The gantt charts above were designed as a plan of action from the beginning of the project tasks until the end of the project, this gantt chart was developed directly from the requirement gathering process. Following this plan above and the owner's specifications, a product backlog list as shown in figure below was consequently developed. The backlog list shows priority of each individual task which was performed, following the list and daily scrum meetings that took 30 minutes, the task lists order of implementation were selected based on order of priority.      
 
 \begin{center}
 \begin{figure}[h]
 \centering
-\includegraphics[trim = {0 2cm 14cm 0cm},clip, scale=0.58]{gantt5}
-\caption{Gantt chart part 5}
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=1]{product_backlog}
+\caption{Product backlog}
 \end{figure}
 \end{center}
 
 \newpage
-
-\begin{center}
-\begin{figure}[h]
-\centering
-\includegraphics[trim = {0 11cm 14cm 0},clip, scale=0.58]{gantt6}
-\caption{Gantt chart part 6}
-\end{figure}
-\end{center}
-
-\newpage
-
-\subsubsection{Sprint Retrospective}
+\subsubsection{Sprint Retrospective}~\\
 
 Sprint retrospective serves to reflect on the current progress of the project to identify areas that need improvement and to reinforce good habits.
 
@@ -462,10 +445,7 @@ Sprint retrospective serves to reflect on the current progress of the project to
 		\\ \hline
 	\end{tabular}
 	
-	\newpage
-
 The figure below shows that the estimated time was not followed precisely as highlighted in the improvement section above.	
-	
 	
 \begin{center}
 \begin{figure}[h]
@@ -475,8 +455,6 @@ The figure below shows that the estimated time was not followed precisely as hig
 \end{figure}
 \end{center}
 
-\newpage
-
 \begin{center}
 \begin{figure}[h]
 \centering
@@ -485,16 +463,99 @@ The figure below shows that the estimated time was not followed precisely as hig
 \end{figure}
 \end{center}
 
+\clearpage
+\section{Description of some relevant(demonstrable) module}
+
+The login page is shown in Figure 27. The users are able to select the domain on the drop-down as shown in Figure 27. If the login details valid the user will either be redirected to a student page, course coordinator page or an administrator page depending on the domain specified. 
+
+\subsection{Login page}
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=0.5]{loginPage}
+\caption{Login page}
+\end{figure}
+\end{center}
+
+\newpage 
+
+The student page is shown in Figure 28
+
+\subsection{Student page}
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=0.5]{studentPage}
+\caption{Student page}
+\end{figure}
+\end{center}
+
+
+
+When the student clicks on display marks for all courses option he/she will be redirected to a page where final marks for each courses will be shown as can be seen in Figure 29. 
+
 \newpage
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=1]{StudentMarks}
+\caption{display marks for all courses page}
+\end{figure}
+\end{center}
+
+\newpage
+\subsection{Course coordinator home page}
+
+The course coordinator home page is shown in figure 30.
 
 \begin{center}
 \begin{figure}[h]
 \centering
-\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=1]{product_backlog}
-\caption{Product backlog}
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=0.5]{CourseCoordinatorPage}
+\caption{Course coordinator page}
 \end{figure}
 \end{center}
 
+When the click assessment methods, he is redirected to a page where he can add a course as shown in Figure 31.
+
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=1]{RegisteringAcourse}
+\caption{Registering a course}
+\end{figure}
+\end{center}
+
+\newpage
+
+\section{Administrator page}
+
+The administrator page is shown i Figure 32. 
+
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=0.5]{AdminPage}
+\caption{Administrator page}
+\end{figure}
+\end{center}
+
+The administrator is able to register a student when he/she clicks the table of students option as shown in Figure 33. 
+
+
+\begin{center}
+\begin{figure}[h]
+\centering
+\includegraphics[trim = {0 0cm 0cm 0cm},clip, scale=1]{RegisteringStudents}
+\caption{Students registering page}
+\end{figure}
+\end{center}
+
+
+\newpage
+\clearpage
 
 \section{Conclusion}
 
