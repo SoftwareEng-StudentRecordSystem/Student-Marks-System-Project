@@ -9,7 +9,7 @@
 - Within the project folder there is also a Source code directry that has both Front-End and Back-End development code.  
 - The Project folder has the final Dileverables for the required student record/marks system project, the directory also has source code directory that has Front-End and Back-End development code.  
 
-2. To run a latex document you will need:
+2. To run a latex document you will need the following: 
 
 - Latex editor 
 - The Latex doc file
