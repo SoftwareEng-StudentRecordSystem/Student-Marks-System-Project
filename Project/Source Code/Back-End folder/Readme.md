@@ -1,5 +1,5 @@
 - This code was tested within a LAMP server environment, that is, it requires installation of Linux, Apache, MySQL and PHP. 
 - To invoke the system, LAMP should be installed.
 - The database is created using the files in the Back-End directory, these are the create_dbs.php and create_tables.php
-- The source code files within the front-end and back-end directory are all added into the /VAR/WWW   
+- The source code files within the front-end and back-end directory are all added into the /VAR/WWW directory.
 - From a web browser, goto localhost/login.html . This page would require logging in details that are as specified in the user database created. 
